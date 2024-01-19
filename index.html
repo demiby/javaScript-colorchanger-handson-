@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+      h1 {
+            color: #3498db;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+</style>
+<title>JavaScript colorChanger() Hands-On</title>
+</head>
+<body>
+<h1>JavaScript colorChanger() Hands-On</h1>
+
+<button id="colorButton">click me</button>
+<div id="colorDiv" style="color: green;">THIS IS THE COLOR DIV</div>
+
+<script>
+const colorButton =document.getElementById('colorButton');
+const colorDiv =document.getElementById('colorDiv');
+
+colorButton.addEventListener('click', function(){
+    if (colorDiv.style.color === 'green'){
+        colorDiv.style.color = 'blue';
+        } else {
+            colorDiv.style.color = 'green';
+    }
+});
+
+            
+    </script>
+</body>
+</html>
+
